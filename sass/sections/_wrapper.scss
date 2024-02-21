@@ -1,0 +1,11 @@
+.wrapper {
+    margin: 0 auto;
+    gap: 35px;
+    margin: 25px;
+
+    @include tablet-720 {
+        margin: 15px;
+        ;
+    }
+
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- encoding -->
+	<meta charset="UTF-8" />
+	<!-- Mobile support -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Title and SEO -->
+	<title>Tasty App</title>
+	<meta name="description"
+		content="Order delicious fast food online from our wide selection of burgers, pizza, beverages, salads, and more. Enjoy quick service, convenient online ordering, and contactless delivery. Explore our digital menu, meal deals, and specials while benefiting from easy online payment options. Join us for a satisfying dining experience that brings local favorites right to your doorstep." />
+	<meta name="keywords"
+		content="fast food, online food ordering, delivery, burgers, fries, pizza, beverages, quick service, meal deals, convenience, digital menu, mobile ordering, contactless delivery, online payment, customer reviews, specials and promotions, local favorites" />
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Online store Lucknow" />
+	<meta property="og:description" content="Order delicious fast food online." />
+	<meta property="og:image" content="./img/opengraph/opengraph.png" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<main class="main">
+			<section class="menu">
+				<header class="header">
+					<h1 class="title header__title">
+						Welcome To Lucknow
+					</h1>
+
+					<button class="header__btn" id="cart">
+						<img src="./img/header/cart.svg" alt="cart">
+						<span class="header__btn-counter">0</span>
+					</button>
+
+				</header>
+				<div class="menu__wrapper">
+					<ul class="menu__list">
+						<li><button class="menu__link button-value" data-action="all">
+								<img src="./img/menu/all.png" alt="all">All</button></li>
+						<li><button class="menu__link button-value" data-action="burgers">
+								<img src="./img/menu/burger.png" alt="burger">Burgers</button></li>
+						<li><button class="menu__link button-value" data-action="pizza">
+								<img src="./img/menu/pizza.png" alt="pizza">Pizza</button></li>
+						<li><button class="menu__link button-value" data-action="salad">
+								<img src="./img/menu/salad.png" alt="salad">Salad</button></li>
+						<li><button class="menu__link button-value" data-action="donuts">
+								<img src="./img/menu/donut.png" alt="donuts">Donuts</button></li>
+						<li><button class="menu__link button-value" data-action="drinks">
+								<img src="./img/menu/drinks.png" alt="drinks">Drinks</button></li>
+					</ul>
+					<div class="menu__banner">
+						<p>-50% Off</p>
+						<span>the full price of burgers</span>
+
+						<img class="menu__img" src="./img/menu/menu-banner/burger.png" alt="burger" class="banner__img">
+						<img class="menu__img" src="./img/menu/menu-banner/apple.png" alt="apple" class="banner__img">
+						<img class="menu__img" src="./img/menu/menu-banner/cheese.png" alt="cheese" class="banner__img">
+						<img class="menu__img" src="./img/menu/menu-banner/fire.png" alt="fire" class="banner__img">
+						<img class="menu__img" src="./img/menu/menu-banner/orange.png" alt="orange" class="banner__img">
+					</div>
+				</div>
+				<div class="dishes" id="dishes">
+					<h2 class="title-h2 dishes-title">Products List</h2>
+					<div class="dishes__wrapper" id="products"></div>
+				</div>
+			</section>
+		</main>
+		<div class="cart__bg cart__bg-none" data-action="bg">
+			<div id="cartBlock" class="cart cart__none">
+				<div class="cart__container">
+					<h1 class="title cart-title">Your Order</h1>
+					<button class="cart__close" id="cartClose">
+						<img src="./img/dishes/close.svg" alt="close">
+					</button>
+				</div>
+				<span data-cart-empty class="cart__descr">Your cart is empty ☹️</span>
+				<div class="cart__wrapper"></div>
+				<div id="orderInfo" class="none">
+					<p class='cart__total'>
+						<span>Total price:</span>
+						<span>$</span>
+						<span class="cart__total-price">0</span>
+					</p>
+					<h3 class="title-h3 cart__form-title">Recipient's Info</h3>
+					<form class="cart__form">
+						<div>
+							<input class="cart__input" type="text" placeholder="Your name">
+							<input class="cart__input" type="text" placeholder="Your cell phone number">
+						</div>
+						<input class="cart__input" type="text" placeholder="Your delivery adress">
+						<button class="cart__button">To order</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>

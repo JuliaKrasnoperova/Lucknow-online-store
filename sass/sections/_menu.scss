@@ -1,0 +1,202 @@
+.menu {
+    background-color: $white-color;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    @include tablet-720 {
+        gap: 10px;
+    }
+
+    @include tablet-600 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+}
+
+.menu__list li:first-child {
+
+    @include tablet-600 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+}
+
+.menu__list li:nth-child(2) {
+    @include tablet-600 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+}
+
+.menu__list li:nth-child(3) {
+    @include tablet-600 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+}
+
+.menu__list li:nth-child(4) {
+    @include tablet-600 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+}
+
+.menu__list li:nth-child(5) {
+    @include tablet-600 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+}
+
+.menu__list li:nth-child(6) {
+    @include tablet-600 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+}
+
+
+.menu__list li {
+    cursor: pointer;
+}
+
+.menu__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #585858;
+    background-color: #F3F3F3;
+    width: 104px;
+    height: 160px;
+    padding: 20px;
+    border-radius: 60px;
+    transition: 0.2s;
+    cursor: pointer;
+
+    @include tablet {
+        width: 80px;
+        height: 117px;
+    }
+
+    @include tablet-720 {
+        width: 66px;
+        height: 94px;
+        font-size: 13px;
+        padding: 13px;
+    }
+
+    @include tablet-600 {
+        width: 55px;
+        height: 80px;
+    }
+
+}
+
+.menu__link:hover {
+    color: #585858;
+}
+
+.menu__link_active {
+    border-radius: 60px;
+    box-shadow: 0px 4px 46px 0px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    color: $black-color;
+}
+
+.menu__wrapper {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 100px;
+
+    @include laptop {
+        flex-direction: column-reverse;
+    }
+
+    @include tablet-720 {
+        margin-top: 60px;
+    }
+
+    @include tablet-600 {
+        gap: 35px;
+        align-items: center;
+    }
+}
+
+.menu__banner {
+    position: relative;
+    width: 259px;
+    height: 158px;
+    border-radius: 30px;
+    background: rgb(171, 151, 243);
+    padding: 70px 20px;
+
+    @include tablet-600 {
+        width: 206px;
+        height: 140px;
+    }
+}
+
+
+.menu__banner p {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: $white-color;
+
+    @include mobile {
+        font-size: 20px;
+    }
+}
+
+.menu__banner span {
+    font-family: 'League Spartan';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: $white-color;
+}
+
+.menu__img:nth-child(3) {
+    position: absolute;
+    bottom: 22px;
+    left: 62px;
+}
+
+.menu__img:nth-child(4) {
+    position: absolute;
+    top: -25%;
+}
+
+.menu__img:nth-child(5) {
+    position: absolute;
+    bottom: 22%;
+    right: -7%;
+}
+
+.menu__img:nth-child(6) {
+    position: absolute;
+    top: -24%;
+    left: 41%;
+}
+
+.menu__img:nth-child(7) {
+    position: absolute;
+    top: 11%;
+    left: 38%;
+}

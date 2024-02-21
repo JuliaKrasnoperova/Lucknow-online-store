@@ -1,0 +1,58 @@
+html {
+    min-height: 100vh;
+    background: rgb(222, 235, 251);
+    /* sticky footer */
+    scroll-behavior: smooth;
+    // background: rgb(234, 241, 254);
+}
+
+.locked {
+    overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    border-radius: 40px;
+    /* sticky footer */
+    display: flex;
+    /* sticky footer */
+    flex-direction: column;
+    /* sticky footer */
+
+    font-family: 'League Spartan', sans-serif;
+    line-height: 1.6875;
+
+    text-rendering: optimizeSpeed;
+    //text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body>* {
+    flex-shrink: 0;
+    /* sticky footer */
+}
+
+section {
+    // position: relative;
+}
+
+
+
+/* Utility */
+
+.none {
+    display: none !important;
+}
+
+/* Sticky Footer */
+
+.footer {
+    margin-top: auto;
+    /* sticky footer */
+
+    /* Just for fun */
+    text-align: center;
+}

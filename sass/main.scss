@@ -1,0 +1,21 @@
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+@import "./base/fonts";
+@import './base/media';
+
+// Blocks
+@import './blocks/title';
+@import './blocks/title-h2';
+@import './blocks/title-h3';
+@import "./blocks/header";
+@import "./blocks/logo";
+@import './blocks/counter';
+
+
+// Sections
+@import './sections/wrapper';
+@import './sections/menu';
+@import './sections/_dishes';
+@import './sections/cart';

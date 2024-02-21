@@ -1,0 +1,39 @@
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.counter__control {
+    background-color: #F2EEEE;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 500;
+    color: $black-color;
+    cursor: pointer;
+    transition: 0.2s;
+
+    @include tablet-720 {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.counter__control:hover {
+    background-color: #FF5454;
+}
+
+.counter__current {
+    font-size: 14px;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 500;
+    color: $black-color;
+}

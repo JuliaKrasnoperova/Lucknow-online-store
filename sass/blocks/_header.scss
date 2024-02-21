@@ -1,0 +1,86 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+        align-items: center;
+    }
+}
+
+.header__title {}
+
+
+
+.header__title {
+    position: relative;
+}
+
+.header__title::after {
+    position: absolute;
+    content: '';
+    background-image: url(/img/header/smile.png);
+    display: block;
+    width: 40px;
+    height: 41px;
+    top: 0;
+    right: -11%;
+
+    @include tablet-720 {
+        top: -10px;
+        right: -16%;
+    }
+
+    @include tablet-600 {
+        right: -20%;
+    }
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.header__btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    background-color: $main-color;
+    transition: 0.2s;
+
+    @include tablet-600 {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.header__btn:hover {
+    background-color: #c4c4c4;
+}
+
+.header__btn-counter {
+    position: absolute;
+    top: 31px;
+    right: -1px;
+    width: 20px;
+    height: 20px;
+    background-color: #FF5454;
+    padding: 5px;
+    color: $white-color;
+    border-radius: 17px;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+
+    @include tablet-600 {
+        top: 21px;
+        right: -5px;
+        width: 15px;
+        height: 15px;
+        padding: 3px;
+    }
+}
