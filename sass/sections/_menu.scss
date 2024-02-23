@@ -2,6 +2,10 @@
     background-color: $white-color;
     padding: 40px;
     border-radius: 40px;
+
+    @include tablet-600 {
+        padding: 20px;
+    }
 }
 
 .menu__list {
