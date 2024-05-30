@@ -1,4 +1,3 @@
-"use strict";
 // Открытие корзины по нажатию картинки с корзиной
 export const openCart = () => {
   const cartBtn = document.querySelector("#cart");

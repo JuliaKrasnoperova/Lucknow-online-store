@@ -1,4 +1,3 @@
-"use strict";
 
 import { products } from "./consts.js";
 import { addToCart } from "./addToCart.js";

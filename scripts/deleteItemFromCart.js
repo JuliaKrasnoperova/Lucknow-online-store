@@ -1,6 +1,7 @@
 import { calcPrice } from "./calcPrice.js";
 import { countItemsInCart } from "./countItemsInCart.js";
 import { toggleCartStatus } from "./toggleCartStatus.js";
+import { updateStorage } from "./updateStorage.js";
 
 // Удаление товара из корзины
 export const deleteItemFromCart = () => {
@@ -12,6 +13,7 @@ export const deleteItemFromCart = () => {
       toggleCartStatus();
       calcPrice();
       countItemsInCart();
+      updateStorage();
     }
   });
 };

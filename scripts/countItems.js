@@ -1,7 +1,6 @@
-"use strict";
-
 import { calcPrice } from "./calcPrice.js";
 import { countItemsInCart } from "./countItemsInCart.js";
+import { updateStorage } from "./updateStorage.js";
 
 // Счетчик товаров
 export const countItems = () => {
@@ -15,6 +14,7 @@ export const countItems = () => {
         currentValue.innerText = --currentValue.innerText;
         calcPrice();
         countItemsInCart();
+        updateStorage();
       }
     }
 
@@ -24,6 +24,7 @@ export const countItems = () => {
       currentValue.innerText = ++currentValue.innerText;
       calcPrice();
       countItemsInCart();
+      updateStorage();
     }
   });
 };

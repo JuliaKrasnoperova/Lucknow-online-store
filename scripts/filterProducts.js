@@ -1,5 +1,3 @@
-"use sctrict";
-
 // Фильтр товаров по категориям
 export const filterProduct = (value) => {
   const buttons = document.querySelectorAll(".button-value");

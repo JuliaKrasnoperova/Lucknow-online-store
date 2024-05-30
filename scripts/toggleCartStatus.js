@@ -1,4 +1,3 @@
-"use srtict";
 
 // Отображение надписи "Your cart is empty в корзине, если она пустая"
 export const toggleCartStatus = () => {
@@ -14,3 +13,12 @@ export const toggleCartStatus = () => {
     orderInfo.classList.add("none");
   }
 };
+
+const updateStatusInCart = () => {
+  if (localStorage.getItem("products") !== null) {
+    const cartEmptyBage = document.querySelector("[data-cart-empty]");
+    cartEmptyBage.classList.add("none");
+    orderInfo.classList.remove("none");
+  }
+};
+updateStatusInCart();

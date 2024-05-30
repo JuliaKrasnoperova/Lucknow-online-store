@@ -1,4 +1,3 @@
-"use strict";
 
 // Подсчет стоимости всех товаров в корзине
 export const calcPrice = () => {

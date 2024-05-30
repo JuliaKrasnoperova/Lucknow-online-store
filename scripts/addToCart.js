@@ -1,8 +1,7 @@
-"use strict";
-
 import { calcPrice } from "./calcPrice.js";
 import { countItemsInCart } from "./countItemsInCart.js";
 import { toggleCartStatus } from "./toggleCartStatus.js";
+import { updateStorage } from "./updateStorage.js";
 
 // Добавление товаров в корзину
 export const addToCart = (
@@ -48,5 +47,6 @@ export const addToCart = (
     }
     toggleCartStatus();
     calcPrice();
+    updateStorage();
   });
 };

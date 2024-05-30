@@ -1,4 +1,3 @@
-"use strict";
 
 // Товары для заказа
 export const products = {
