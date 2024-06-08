@@ -5,8 +5,10 @@ import { filterProduct } from "./filterProducts.js";
 import { openCart } from "./openCart.js";
 import { preloader } from "./preloader.js";
 
-createCards();
-countItems();
-deleteItemFromCart();
-openCart();
-preloader();
+window.addEventListener("DOMContentLoaded", () => {
+  createCards();
+  countItems();
+  deleteItemFromCart();
+  openCart();
+  preloader();
+});
